@@ -1,141 +1,423 @@
 # to visualize: https://rawcdn.githack.com/nekonaute/sandbox/main/alternatives.html
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EU Software & Service Alternatives</title>
-    <style>
-        body { font-family: Arial, sans-serif; }
-        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f4f4f4; }
-        .tick { color: green; font-weight: bold; }
-        .cross { color: red; font-weight: bold; }
-    </style>
-</head>
-<body>
-    <h2>EU Software & Service Alternatives</h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Open Source</th>
-            <th>Origin</th>
-            <th>OS</th>
-            <th>EU-Linux Alternative</th>
-            <th>Open Source Alternative</th>
-        </tr>
-        <tr>
-            <td>Spotify</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>Sweden (US-owned)</td>
-            <td>Windows, MacOS, Linux</td>
-            <td>Deezer (France)</td>
-            <td>Navidrome</td>
-        </tr>
-        <tr>
-            <td>Obsidian</td>
-            <td>Software</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Windows, MacOS, Linux</td>
-            <td>Joplin</td>
-            <td>Joplin</td>
-        </tr>
-        <tr>
-            <td>Keynote</td>
-            <td>Software</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>MacOS</td>
-            <td>ONLYOFFICE Presentations</td>
-            <td>Deck (Nextcloud)</td>
-        </tr>
-        <tr>
-            <td>Microsoft Office</td>
-            <td>Software</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Windows, MacOS</td>
-            <td>ONLYOFFICE (Latvia)</td>
-            <td>LibreOffice</td>
-        </tr>
-        <tr>
-            <td>Google Docs</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Web</td>
-            <td>ONLYOFFICE</td>
-            <td>Etherpad</td>
-        </tr>
-        <tr>
-            <td>Adobe Photoshop</td>
-            <td>Software</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Windows, MacOS</td>
-            <td>Affinity Photo (UK)</td>
-            <td>Krita</td>
-        </tr>
-        <tr>
-            <td>Proton Drive</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>Switzerland</td>
-            <td>Web</td>
-            <td>Nextcloud</td>
-            <td>Nextcloud</td>
-        </tr>
-        <tr>
-            <td>Proton VPN</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>Switzerland</td>
-            <td>Windows, MacOS, Linux</td>
-            <td>Mullvad VPN (Sweden)</td>
-            <td>WireGuard</td>
-        </tr>
-        <tr>
-            <td>Proton Calendar</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>Switzerland</td>
-            <td>Web, Mobile</td>
-            <td>Nextcloud Calendar</td>
-            <td>Nextcloud Calendar</td>
-        </tr>
-        <tr>
-            <td>Twitter/X</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Web, Mobile</td>
-            <td>Mastodon</td>
-            <td>Mastodon</td>
-        </tr>
-        <tr>
-            <td>Instagram</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Web, Mobile</td>
-            <td>Pixelfed</td>
-            <td>Pixelfed</td>
-        </tr>
-        <tr>
-            <td>Facebook</td>
-            <td>Service</td>
-            <td class="cross">✗</td>
-            <td>US</td>
-            <td>Web, Mobile</td>
-            <td>Movim</td>
-            <td>Movim</td>
-        </tr>
-    </table>
-</body>
-</html>
+<table border="1" cellspacing="0" cellpadding="5">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Open‑Source</th>
+      <th>Based</th>
+      <th>OS</th>
+      <th>EU‑Linux Alternative</th>
+      <th>Open‑Source Alternative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ChatGPT</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>OpenAssistant</td>
+      <td>OpenAssistant</td>
+    </tr>
+    <tr>
+      <td>Slack</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Element (Matrix)</td>
+      <td>Element (Matrix)</td>
+    </tr>
+    <tr>
+      <td>Mattermost</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Element (Matrix)</td>
+      <td>Element (Matrix)</td>
+    </tr>
+    <tr>
+      <td>Discord</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Element (Matrix)</td>
+      <td>Element (Matrix)</td>
+    </tr>
+    <tr>
+      <td>ProtonMail</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>EU (Switzerland)</td>
+      <td>Web, Mobile</td>
+      <td>&nbsp;</td>
+      <td>Mailpile</td>
+    </tr>
+    <tr>
+      <td>Google Maps</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>OpenStreetMap</td>
+      <td>OpenStreetMap</td>
+    </tr>
+    <tr>
+      <td>Google Scholar</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>BASE</td>
+      <td>CORE</td>
+    </tr>
+    <tr>
+      <td>Spotify</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>EU (Sweden)</td>
+      <td>Windows, Linux, macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Obsidian</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Joplin</td>
+      <td>Joplin</td>
+    </tr>
+    <tr>
+      <td>Steam</td>
+      <td>Service/Platform</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>GOG</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>CotEditor</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>Japan</td>
+      <td>macOS</td>
+      <td>Geany</td>
+      <td>Geany</td>
+    </tr>
+    <tr>
+      <td>Flycut</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>—</td>
+      <td>macOS</td>
+      <td>CopyQ</td>
+      <td>CopyQ</td>
+    </tr>
+    <tr>
+      <td>Affinity Photo</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>EU (UK)</td>
+      <td>Windows, macOS</td>
+      <td>GIMP</td>
+      <td>GIMP</td>
+    </tr>
+    <tr>
+      <td>VLC</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>EU (France)</td>
+      <td>Windows, Linux, macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Transmission</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>—</td>
+      <td>Windows, Linux, macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Dropbox</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Nextcloud</td>
+      <td>Nextcloud</td>
+    </tr>
+    <tr>
+      <td>Microsoft Office</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, macOS, Web</td>
+      <td>LibreOffice</td>
+      <td>LibreOffice</td>
+    </tr>
+    <tr>
+      <td>Google Docs</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>CryptPad</td>
+      <td>CryptPad</td>
+    </tr>
+    <tr>
+      <td>Google Chrome</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>LibreWolf</td>
+      <td>LibreWolf</td>
+    </tr>
+    <tr>
+      <td>Mozilla Firefox</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>LibreWolf</td>
+      <td>LibreWolf</td>
+    </tr>
+    <tr>
+      <td>Google Drive</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS, Web</td>
+      <td>Nextcloud</td>
+      <td>Nextcloud</td>
+    </tr>
+    <tr>
+      <td>iCloud</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>macOS, iOS</td>
+      <td>pCloud</td>
+      <td>pCloud</td>
+    </tr>
+    <tr>
+      <td>Microsoft Outlook</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, macOS, Web</td>
+      <td>Mailpile</td>
+      <td>Mailpile</td>
+    </tr>
+    <tr>
+      <td>Apple Mail</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>macOS, iOS</td>
+      <td>Mailpile</td>
+      <td>Mailpile</td>
+    </tr>
+    <tr>
+      <td>Microsoft Teams</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Element (Matrix)</td>
+      <td>Element (Matrix)</td>
+    </tr>
+    <tr>
+      <td>Zoom</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Jitsi Meet</td>
+      <td>Jitsi Meet</td>
+    </tr>
+    <tr>
+      <td>Adobe Photoshop</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, macOS</td>
+      <td>GIMP</td>
+      <td>GIMP</td>
+    </tr>
+    <tr>
+      <td>Illustrator</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, macOS</td>
+      <td>Inkscape</td>
+      <td>Inkscape</td>
+    </tr>
+    <tr>
+      <td>Adobe Premiere</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, macOS</td>
+      <td>Kdenlive</td>
+      <td>Kdenlive</td>
+    </tr>
+    <tr>
+      <td>Final Cut Pro</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>macOS</td>
+      <td>Kdenlive</td>
+      <td>Kdenlive</td>
+    </tr>
+    <tr>
+      <td>1Password</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>Canada</td>
+      <td>Windows, Linux, macOS, Mobile</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>LastPass</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS, Mobile</td>
+      <td>KeePassXC</td>
+      <td>KeePassXC</td>
+    </tr>
+    <tr>
+      <td>Visual Studio Code</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>VSCodium</td>
+      <td>VSCodium</td>
+    </tr>
+    <tr>
+      <td>Sublime Text</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Windows, Linux, macOS</td>
+      <td>Geany</td>
+      <td>Geany</td>
+    </tr>
+    <tr>
+      <td>Google Meet</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web, Windows, Linux, macOS</td>
+      <td>Jitsi Meet</td>
+      <td>Jitsi Meet</td>
+    </tr>
+    <tr>
+      <td>Keynote</td>
+      <td>Software</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>macOS, iOS</td>
+      <td>LibreOffice Impress</td>
+      <td>LibreOffice Impress</td>
+    </tr>
+    <tr>
+      <td>GitHub</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>Gitea</td>
+      <td>Gitea</td>
+    </tr>
+    <tr>
+      <td>GitLab</td>
+      <td>Service</td>
+      <td>&#10003;</td>
+      <td>US</td>
+      <td>Web</td>
+      <td>Gitea</td>
+      <td>Gitea</td>
+    </tr>
+    <tr>
+      <td>Twitter/X</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web, Mobile</td>
+      <td>Mastodon</td>
+      <td>Mastodon</td>
+    </tr>
+    <tr>
+      <td>Instagram</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web, Mobile</td>
+      <td>Pixelfed</td>
+      <td>Pixelfed</td>
+    </tr>
+    <tr>
+      <td>Facebook</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>US</td>
+      <td>Web, Mobile</td>
+      <td>Friendica</td>
+      <td>Friendica</td>
+    </tr>
+    <tr>
+      <td>Krita</td>
+      <td>Software</td>
+      <td>&#10003;</td>
+      <td>EU (Belgium)</td>
+      <td>Windows, Linux, macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proton Drive</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>EU (Switzerland)</td>
+      <td>Web, Various</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proton VPN</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>EU (Switzerland)</td>
+      <td>Windows, Linux, macOS</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>Proton Calendar</td>
+      <td>Service</td>
+      <td>&#10006;</td>
+      <td>EU (Switzerland)</td>
+      <td>Web, Mobile</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
